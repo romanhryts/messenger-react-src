@@ -141,8 +141,8 @@ class AppWrapper extends Component {
         return (
             <>
                 <Contacts
-                    logInPersonImg={logInPersonImg}
-                    logInPersonName={logInPersonName}
+                    // logInPersonImg={logInPersonImg}
+                    // logInPersonName={logInPersonName}
                     onChoosingContact={this.onChoosingContact}
                     contacts={contacts}
                 />

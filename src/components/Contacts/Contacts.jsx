@@ -17,7 +17,7 @@ class Contacts extends Component {
     }
 
     render() {
-        const {logInPersonImg, logInPersonName, onChoosingContact, contacts} = this.props;
+        const {onChoosingContact, contacts} = this.props;
         const {keyWord} = this.state;
         const renderContacts = contacts
             .filter(item => item.name.trim().toLowerCase().includes(keyWord))
@@ -37,8 +37,8 @@ class Contacts extends Component {
         return (
             <div className="contacts">
                 <ContactsFind
-                    logInPersonImg={logInPersonImg}
-                    logInPersonName={logInPersonName}
+                    // logInPersonImg={logInPersonImg}
+                    // logInPersonName={logInPersonName}
                     onSearching={this.onSearching}
                 />
                 <ContactsList
